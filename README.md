@@ -1,11 +1,5 @@
 # Bankist-App-platform
-Bankist is a fictitious and minimalistic online banking application that allows the user to:
-Log in with a username and password
-View and sort their monetary movements
-Transfer money to another account
-Request a loan from the bank
-Delete their account
-Log in credentials:
+Bankist is a fictional and minimalistic internet banking app that allows users to: Use your username and password to log in. View and sort their financial transactions. Transfer funds to a different account. Inquire for a bank loan. Remove their account from the system Login credentials are as follows:
 
 username: bd | password: 1111
 username: mo | password 2222
