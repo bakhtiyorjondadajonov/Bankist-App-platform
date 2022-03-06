@@ -1,0 +1,22 @@
+.login__btn{
+background-color: transparent0;
+border: none;
+font-size: 2.2rem;
+}
+.operations_btn{
+    grid-column: 3/span 1;
+    grid-row: 1/span 1;
+    border: none;
+    width: 5rem;
+    font-size: 1.9rem;
+    border-radius: 10px;
+    &--loan{
+        grid-column: 2/span 1; 
+    }
+}
+.btn_sort{
+    border: none;
+    font-size: 1.9rem;
+    background-color: transparent;
+    text-transform: uppercase;
+}

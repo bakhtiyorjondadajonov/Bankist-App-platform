@@ -1,0 +1,193 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", "sans-serif"; }
+
+body {
+  height: 100vh;
+  color: #444;
+  background-color: #f3f3f3;
+  padding: 2rem; }
+
+.welcome {
+  font-size: 1.9rem; }
+
+.login__btn {
+  background-color: transparent0;
+  border: none;
+  font-size: 2.2rem; }
+
+.operations_btn {
+  grid-column: 3/span 1;
+  grid-row: 1/span 1;
+  border: none;
+  width: 5rem;
+  font-size: 1.9rem;
+  border-radius: 10px; }
+  .operations_btn--loan {
+    grid-column: 2/span 1; }
+
+.btn_sort {
+  border: none;
+  font-size: 1.9rem;
+  background-color: transparent;
+  text-transform: uppercase; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between; }
+
+.login {
+  padding: 0 2rem; }
+
+.logo {
+  height: 5rem; }
+
+.login__user {
+  border: none;
+  border-radius: 10rem;
+  text-align: center;
+  width: 10rem;
+  padding: 1rem 2rem;
+  margin: 0 0.5rem;
+  font-family: inherit;
+  text-align: center; }
+  .login__user:focus {
+    outline-color: lightgreen; }
+  .login__user::placeholder {
+    text-align: center;
+    color: #afaeae;
+    font-size: 1.9rem; }
+
+.main__app {
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto auto auto;
+  position: relative;
+  max-width: 100rem;
+  opacity: 0; }
+
+.balance {
+  grid-column: 1/-1;
+  grid-row: 1/span 1;
+  display: flex;
+  justify-content: space-between; }
+  .balance__label {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem; }
+  .balance__date {
+    font-size: 1.5rem;
+    display: block; }
+  .balance__value {
+    font-size: 3.5rem; }
+
+.movements {
+  grid-column: 1/span 1;
+  grid: 2/span 1;
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  background-color: white;
+  height: 56rem;
+  overflow: scroll; }
+
+.movements__rows, .movements__row {
+  display: flex;
+  align-items: center;
+  padding: 2.25rem 4rem;
+  border-bottom: 1px solid #494848; }
+  .movements__rows > *, .movements__row > * {
+    margin-right: 2rem; }
+
+.movements__amount, .movements__value {
+  margin-left: auto; }
+
+.movements__type {
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  color: white; }
+  .movements__type--deposit {
+    background-image: linear-gradient(to right, #9be15d, #39b385); }
+  .movements__type--withdrawal {
+    background-color: #e52a5a; }
+
+.transactions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+.operations {
+  padding: 3rem 4rem;
+  border-radius: 10px; }
+  .operations__transfer {
+    background-image: linear-gradient(45deg, #ffcb03, #ffb003); }
+  .operations__loan {
+    background-image: linear-gradient(45deg, #9be15d, #39b385); }
+  .operations__close {
+    background-image: linear-gradient(45deg, #ff585f, #e52a5a); }
+
+h2 {
+  font-family: "Poppins", "sans-serif";
+  font-size: 2.5rem; }
+
+.form__operations {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem; }
+
+.input_operations {
+  width: 15rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit; }
+  .input_operations:focus {
+    outline-color: #ffb003; }
+
+.form__input_ac {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1; }
+
+.form__input_numb {
+  grid-column: 2/span 1;
+  grid-row: 1/span 1; }
+  .form__input_numb--loan {
+    grid-column: 1/span 1; }
+
+.form_label {
+  text-align: center;
+  font-size: 1.5rem; }
+  .form_label--loan {
+    grid-row: 2/span 1; }
+
+.summary {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center; }
+  .summary__label {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  .summary__value {
+    margin-right: 2rem;
+    font-size: 2.5rem; }
+    .summary__value--in, .summary__value--interest {
+      color: #39b385; }
+    .summary__value--out {
+      color: #e52a5a; }
+
+.label__timer {
+  margin-left: auto;
+  font-size: 1.2rem; }
+
+.time {
+  font-weight: 900; }

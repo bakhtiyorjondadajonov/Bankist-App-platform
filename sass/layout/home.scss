@@ -1,0 +1,175 @@
+.main__app{
+    margin: 4rem auto;
+   display: grid;
+   grid-template-columns:4fr 3fr ;  
+   grid-template-rows: auto auto auto;
+   position: relative;
+   max-width: 100rem;
+   opacity: 0;
+}
+
+//---------------BALANCE DISPLAY-----------
+.balance{
+    grid-column: 1/-1;
+    grid-row: 1/span 1;
+    display: flex;
+    justify-content: space-between;
+    &__label{
+font-size:2.2rem;
+margin-bottom: 0.5rem;
+    }
+    &__date{
+        font-size: 1.5rem;
+        display: block;
+
+    }
+    &__value{
+        font-size: 3.5rem;
+
+    }
+}
+.date{
+
+}
+//---------------MOVEMENTS DISPLAY-----------
+.movements{
+    grid-column: 1/span 1;
+    grid: 2/span 1;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    background-color: white;
+    height: 56rem;
+    overflow: scroll;
+  
+    
+
+}
+.movements__rows,.movements__row{
+    display: flex;
+    align-items: center;
+    padding: 2.25rem 4rem;
+    border-bottom: 1px solid rgb(73, 72, 72);
+    &>*{
+        margin-right: 2rem;
+    }
+}
+.movements__amount,.movements__value{
+    margin-left: auto;
+}
+.movements__type{
+    font-size: 1.2rem;
+padding: 0.5rem 1.5rem;
+border-radius: 10rem;
+text-transform: uppercase;
+color: white;
+    &--deposit{
+        background-image:linear-gradient(to right,$color-green-light,$color-green-dark ) ;
+        
+        
+    }
+    &--withdrawal{
+        background-color:$color-red-dark ;
+        
+    }
+}
+
+
+//---------------OPERATIONS DISPLAY-----------
+//-------Transfer-----Loan----
+.transactions{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.operations{
+    padding: 3rem 4rem;
+    border-radius: 10px;
+&__transfer{
+    background-image: linear-gradient(45deg ,$color-yellow-light,$color-yellow-dark);
+}
+&__loan{
+    background-image: linear-gradient(45deg ,$color-green-light,$color-green-dark);
+  
+    
+}
+&__close{
+    background-image: linear-gradient(45deg ,$color-red-light,$color-red-dark);
+
+}
+}
+h2{
+    font-family: $font-family;
+    font-size: 2.5rem;
+}
+.form__operations{
+    display: grid;
+    grid-template-columns: 2.5fr 2.5fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+.input_operations{
+    width: 15rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    &:focus{
+        outline-color:$color-yellow-dark;
+
+    }
+    font-family: inherit;
+}
+.form__input_ac{
+   grid-column: 1/span 1; 
+   grid-row: 1/span 1;
+}
+.form__input_numb{
+    grid-column: 2/span 1; 
+    grid-row: 1/span 1;
+    &--loan{
+        grid-column: 1/span 1; 
+
+    }
+
+}
+.form_label{
+    text-align: center;
+    font-size: 1.5rem;
+&--loan{
+    grid-row: 2/span 1;
+}
+}
+
+//--------------------SUMMARY--------
+.summary{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    &__label{
+    margin-right: 2rem;
+   
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+&__value{
+    margin-right: 2rem;
+font-size: 2.5rem;
+&--in,&--interest{
+    color: $color-green-dark;
+}
+&--out{
+    color:$color-red-dark;
+}
+}
+}
+.label__timer{
+   margin-left: auto;
+   font-size: 1.2rem;
+
+}
+.time{
+    font-weight: 900;
+}
+

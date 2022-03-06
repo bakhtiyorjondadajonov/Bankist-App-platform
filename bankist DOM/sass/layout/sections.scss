@@ -1,0 +1,246 @@
+.section{
+    max-width: 90rem;
+    margin: 12rem auto;
+    &__title{
+        padding :0 6rem;
+margin-bottom: 2rem;
+    }
+}
+
+//-----FEATURES--------//
+.features{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5rem;
+    
+    &__img{
+width: 100%;
+transform: translateX(-5rem);
+    }
+    &__features{
+        
+       padding: 2rem;
+
+    }
+    &__icon{
+       z-index: 2;
+       font-size: 2rem;
+       font-weight: 400;
+       color:var(--color-primary);
+     &:after{
+      
+        transform: translateX(-25%) translateY(-70%);
+         content: "";
+         display: block;
+         top: 0;
+         left: 0;
+         background-image: var(--gradient-primary);
+         width: 5rem;
+         height:5rem;
+         border-radius: 50%;
+         z-index: -1;
+         opacity: 0.2;
+     }
+      
+       
+
+    }
+    &__header{
+font-size: 2rem;
+margin-top: -1rem;
+margin-bottom: 1rem;
+    }
+}
+
+//------------SECTION 2 || OPERATIONS--------------------//
+.operations{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 8rem;
+&__tab{
+    font-size: 1.5rem;
+    border: none;
+    padding: 1.5rem 3rem;
+    border-radius: 60px 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: inherit;
+    margin-right: 2rem;
+   &--1{
+background-image:var(--gradient-primary) ;
+   }
+   &--2{
+    background-image:var(--gradient-secondary) ;
+   }
+   &--3{
+background-image: linear-gradient(to right,#0000ff,rgb(0, 162, 255));
+   }
+}
+
+    &__tabs{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0 10rem;
+        transform: translateY(-50%);
+
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: repeat(2,min-content);
+       
+        gap: 3rem;
+        padding:4rem 1rem 4rem 0rem;
+       
+&--text{
+    font-size: 1.8rem;
+    font-weight: 400;
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+    align-self: center;
+}
+    }
+    &__icon{
+grid-column: 1/span 1;
+grid-row: 1/span 1;
+
+
+
+    z-index: 2;
+    font-size:2.5rem;
+    font-weight: 400;
+    color:var(--color-primary);
+    justify-self: flex-end;
+    margin-right: 2rem;
+    &:before{
+
+         padding: 2rem;
+         border-radius: 50%;
+        //  width: 10rem;
+        //  height: 10rem;
+         background:rgba(128, 255, 0, 0.342);
+         z-index: -1;
+         
+    }
+ 
+
+
+
+
+
+    }
+
+}
+.user{
+    color: var(--color-tertiary);
+    font-size:2.2rem;
+    &:before{
+
+        padding: 2rem;
+        border-radius: 50%;
+       //  width: 10rem;
+       //  height: 10rem;
+        background:rgba(255, 0, 0, 0.233);
+        z-index: -1;
+        
+   }
+}
+.home{
+
+    color: var(--color-secondary-darker);
+    font-size:2.2rem;
+    &:before{
+
+        padding: 2rem;
+        border-radius: 50%;
+       //  width: 10rem;
+       //  height: 10rem;
+        background:rgba(255, 153, 0, 0.233);
+        z-index: -1;
+        
+   }
+
+}
+
+
+//
+//
+//------------SLIDER, SLIDES,TESTIMONIALS---------------//
+//
+//
+.slider{
+    width: 100%;
+    height: 50rem;
+  
+    position: relative;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.slide{
+    width: 100%;
+   
+
+position: absolute;
+top: 0;
+left: 0;
+  
+   
+
+}
+.testimonial{
+    position: relative;
+    margin: 2rem 4rem;
+    &:before{
+        top: -10rem;
+        left: -8rem;
+        position: absolute;
+        content: "\201C";
+        display: block;
+        font-size: 18rem;
+        
+        background-image: linear-gradient(to right,var(--color-secondary),var(--color-tertiary));
+        background-clip: text;
+        -webkit-background-clip: text;
+        
+        color: transparent;
+    }
+   
+    &__header{
+        font-size: 2.1rem;
+
+    }
+    &__text{
+font-size: 1.7rem;
+padding: 4rem 6rem;
+    }
+    &__address{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: repeat(2,1fr);
+        font-size: 2.2rem;
+        align-items: center;
+        column-gap: 2rem;
+        
+    }
+    &__img{
+        grid-column: 1/span 1;
+        grid-row: 1/-1;
+        width: 8rem;
+        border-radius: 50%;
+
+    }
+    &__location{
+        align-self: self-start;
+    }
+    &__name{
+        font-size: inherit;
+    }
+
+}

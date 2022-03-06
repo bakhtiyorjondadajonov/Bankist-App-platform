@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist App | by Bakhtiyorjon</title>
+    <link rel="shortcut icon" type="image" href="icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <p class="welcome">Log in to get started</p>
+      <img src="logo.png" alt="icon" class="logo" />
+      <form class="login">
+        <input
+          type="text"
+          placeholder="user"
+          class="login__user login__user--input"
+        />
+        <input
+          type="text"
+          placeholder="PIN"
+          class="login__user login__user--pin"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+    <main class="main__app">
+      <div class="balance">
+        <p class="balance__label">
+          Current Balance
+          <span class="balance__date">
+            As of <span class="date">12/12/12</span>
+          </span>
+        </p>
+        <p class="balance__value">$1000000</p>
+      </div>
+      <div class="movements">
+        <div class="movements__rows">
+          <div class="movements__type movements__type--deposit">Deposit</div>
+
+          <div class="movements__date">Today</div>
+          <div class="movements__amount">$1000</div>
+        </div>
+        <div class="movements__rows">
+          <div class="movements__type movements__type--withdrawal">
+            withdrawal
+          </div>
+
+          <div class="movements__date">Today</div>
+          <div class="movements__amount">$1000</div>
+        </div>
+      </div>
+      <div class="transactions">
+        <div class="operations operations__transfer">
+          <h2>Transfer money</h2>
+          <form class="form__operations">
+            <input
+              type="text"
+              class="
+                input_operations
+                form__
+                input__ac
+                input_operations--transfer-ac
+              "
+              id="trac"
+            />
+            <label class="form_label" for="trac">Transfer To</label>
+            <input
+              type="text"
+              class="
+                input_operations
+                form__input_numb
+                input_operations--transfer-amount
+              "
+              id="tram"
+            />
+            <label class="form_label" for="tram">Transfer amount</label>
+            <button class="operations_btn operations_btn--transfer">
+              &rarr;
+            </button>
+          </form>
+        </div>
+        <div class="operations operations__loan">
+          <h2>Request Loan</h2>
+          <form class="form__operations">
+            <input
+              type="text"
+              class="
+                input_operations
+                form__input_numb form__input_numb--loan
+                input_operations--transfer-amount
+              "
+              id="reqam"
+            />
+            <button class="operations_btn operations_btn--loan">&rarr;</button>
+            <label class="form_label form_label--loan" for="reqam"
+              >Request amount</label
+            >
+          </form>
+        </div>
+        <div class="operations operations__close">
+          <h2>Close account</h2>
+          <form class="form__operations">
+            <input
+              type="text"
+              class="
+                input_operations
+                form__
+                input__ac
+                input_operations--close-ac
+              "
+              id="close_acc"
+            />
+            <label class="form_label" for="close_acc">Confirm account</label>
+            <input
+              type="text"
+              class="
+                input_operations input_operations--close-pin
+                form__input_numb
+              "
+              id="close_user_pin"
+            />
+            <label class="form_label" for="close_user_pin">Confirm PIN</label>
+            <button class="operations_btn operations_btn--close">&rarr;</button>
+          </form>
+        </div>
+      </div>
+      <div class="summary">
+        <p class="summary__label summary__label--in">in</p>
+        <p class="summary__value summary__value--in">$5000</p>
+        <p class="summary__label summary__label--out">out</p>
+        <p class="summary__value summary__value--out">$5000</p>
+        <p class="summary__label summary__label--interest">interest</p>
+        <p class="summary__value summary__value--interest">$5000</p>
+        <button class="btn_sort">&DownArrow; Sort</button>
+        <p class="label__timer">
+          You will be logged out in <span class="time">05:00</span>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

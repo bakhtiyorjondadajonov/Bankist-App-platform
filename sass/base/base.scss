@@ -1,0 +1,15 @@
+*,*:before,*:after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family:$font-family;
+}
+body{
+    height: 100vh;
+    color:#444;
+    background-color: #f3f3f3;
+    padding: 2rem;
+}

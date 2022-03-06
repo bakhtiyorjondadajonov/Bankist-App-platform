@@ -1,0 +1,14 @@
+{
+  "name": "bankist-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jsBankist.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Bakhtiyorjon Dadajonov",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
